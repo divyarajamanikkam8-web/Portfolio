@@ -21,7 +21,7 @@ function enableDarkMode() {
 function disableDarkMode() {
   document.body.classList.remove('dark-mode');
   htmlElement.setAttribute('data-theme', 'light');
-  themeToggle.textContent = '��';
+  themeToggle.textContent = '🌙';
   localStorage.setItem('theme', 'light');
 }
 
