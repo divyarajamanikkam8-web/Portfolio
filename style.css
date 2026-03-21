@@ -1,25 +1,22 @@
-
-/* Emoji styling */
-.emoji {
-  filter: grayscale(1) brightness(0.8);
-  transition: filter 0.3s ease;
-  cursor: pointer;
-}
-
-.emoji.active,
-.emoji:active {
-  filter: grayscale(0) brightness(1);
-}
+/* Fix emoji color issue */
 .section-title h2 {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-md);
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Gradient only for text */
+.section-title h2 .text {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
-  display: inline-block;
 }
 
+/* Emoji normal color */
+.section-title h2 .emoji {
+  -webkit-text-fill-color: initial;
+  background: none;
+}
 :root {
   /* Light Mode Colors */
   --primary: #5b21b6;
