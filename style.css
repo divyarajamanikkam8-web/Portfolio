@@ -859,7 +859,7 @@ body.dark-mode .footer {
   }
 }
 /* ============================================
-   FINAL MOBILE FIX 🔥 (ADD THIS ONLY)
+   MOBILE FIX 
    ============================================ */
 
 @media (max-width: 768px) {
@@ -939,4 +939,48 @@ body.dark-mode .footer {
   .header {
   position: relative;
 }
+}
+/* ============================================
+   TOGGLE BUTTON FIX 🔥
+   ============================================ */
+
+/* Default (desktop) */
+.menu-btn {
+  display: none;
+}
+
+/* Mobile la mattum show */
+@media (max-width: 768px) {
+
+  .menu-btn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    z-index: 2000;
+  }
+
+  /* Hide normal nav in mobile */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100vh;
+    background: linear-gradient(135deg, #5b21b6, #2563eb);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.3s;
+  }
+
+  /* Show menu when active */
+  .nav.active {
+    left: 0;
+  }
 }
