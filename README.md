@@ -62,7 +62,7 @@ portfolio/
 
 ## 📬 Contact
 
-* 📧 Email: [your-email@example.com](mailto:your-email@example.com)
+* 📧 Email: [divyaharina267@gamil.com](mailto:your-email@example.com)
 * 💼 LinkedIn: https://www.linkedin.com/in/divya2607/
 * 💻 GitHub: https://github.com/DIVYAHARINA
 
