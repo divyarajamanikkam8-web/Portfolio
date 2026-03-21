@@ -901,7 +901,7 @@ body.dark-mode .footer {
 
 .menu-btn {
   display: none;
-  font-size: 1.8rem;
+  font-size: 28px;
   background: none;
   border: none;
   color: white;
@@ -916,6 +916,7 @@ body.dark-mode .footer {
     position: absolute;
     top: 15px;
     left: 15px;
+    z-index: 2000;
   }
 
   .nav {
