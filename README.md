@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This is a clean, responsive, and modern website showcasing my skills, projects, education, and expertise.
 
-**[Live Demo](https://divyaharina.github.io/portfolio/)** • **[GitHub](https://github.com/divyarajamanikkam8-web)** • **[LinkedIn](https://www.linkedin.com/in/divya2607/)**
+**[Live Demo](https://divyarajamanikkam8-web-web.github.io/portfolio/)** • **[GitHub](https://github.com/divyarajamanikkam8-web)** • **[LinkedIn](https://www.linkedin.com/in/divya2607/)**
 
 ---
 
@@ -39,9 +39,7 @@ portfolio/
 ├── style.css           # Styling and responsive layout
 ├── script.js           # JavaScript functionality
 ├── README.md           # Project documentation
-└── assets/             # Images, icons, etc.
-    ├── images/
-    └── icons/
+
 ```
 
 ---
@@ -96,13 +94,9 @@ I'd love to hear from you! Feel free to reach out:
 - 📧 **Email:** [divyaharina267@gmail.com](mailto:divyaharina267@gmail.com)
 - 💼 **LinkedIn:** [linkedin.com/in/divya2607](https://www.linkedin.com/in/divya2607/)
 - 💻 **GitHub:** [@divyarajamanikkam8-web](https://github.com/divyarajamanikkam8-web)
-- 🐦 **Twitter:** [@yourhandle](https://twitter.com/) *(optional)*
 
 ---
 
-## 📜 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
