@@ -1,3 +1,81 @@
+/* ============================================
+   PERFECT MOBILE FIX 🔥
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Header layout */
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  /* Section spacing reduce */
+  .section {
+    padding: 50px 15px;
+  }
+
+  /* Title size */
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+
+  /* Cards full width */
+  .skills-grid,
+  .projects-grid,
+  .education-grid,
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Card padding reduce */
+  .skill-card,
+  .project-card,
+  .education-card,
+  .cert-card {
+    padding: 15px;
+  }
+
+  /* Text size adjust */
+  p {
+    font-size: 0.95rem;
+  }
+
+  /* Contact layout */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .section-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .theme-toggle {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+}
 /* Fix emoji color issue */
 .section-title h2 {
   display: inline-flex;
