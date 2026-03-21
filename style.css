@@ -895,3 +895,44 @@ body.dark-mode .footer {
     padding: 50px 15px;
   }
 }
+/* ============================================
+   MOBILE SIDE MENU 🔥
+   ============================================ */
+
+.menu-btn {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;   /* hidden */
+    width: 70%;
+    height: 100vh;
+    background: linear-gradient(135deg, #5b21b6, #2563eb);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: 0.3s;
+  }
+
+  .nav.active {
+    left: 0;   /* show */
+  }
+}
