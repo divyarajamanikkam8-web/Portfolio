@@ -320,6 +320,12 @@ document.querySelectorAll(".nav a").forEach(link => {
   });
 });
 function toggleMenu() {
-  const menu = document.getElementById("mobileMenu");
-  menu.classList.toggle("active");
+  document.getElementById("mobileMenu").classList.toggle("active");
 }
+
+/* Auto close menu */
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("mobileMenu").classList.remove("active");
+  });
+});
