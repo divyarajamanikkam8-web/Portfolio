@@ -896,16 +896,12 @@ body.dark-mode .footer {
   }
 }
 /* ============================================
-   MOBILE SIDE MENU 🔥
+   FINAL MOBILE MENU 🔥
    ============================================ */
 
+/* Hide button in desktop */
 .menu-btn {
   display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
 }
 
 /* Mobile view */
@@ -916,38 +912,48 @@ body.dark-mode .footer {
     position: absolute;
     top: 15px;
     left: 15px;
-    z-index: 2000;
+    font-size: 28px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 3000;
   }
 
   .nav {
     position: fixed;
     top: 0;
-    left: -100%;   /* hidden */
-    width: 70%;
+    left: -100%;
+    width: 75%;
     height: 100vh;
     background: linear-gradient(135deg, #5b21b6, #2563eb);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    transition: 0.3s;
+
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
     transition: left 0.3s ease;
-    z-index: 1500;
+
+    z-index: 2000;
   }
 
   .nav.active {
-    left: 0;   /* show */
+    left: 0;
   }
-    /* Make links visible */
+
   .nav a {
-    font-size: 20px;
     color: white;
+    font-size: 20px;
+    text-decoration: none;
   }
-  .header {
-  position: relative;
-    z-index: 1000;
 }
+
+/* Prevent overlap */
+.header {
+  position: relative;
+  z-index: 1000;
 }
 /* ============================================
    TOGGLE BUTTON FIX 🔥
