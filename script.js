@@ -319,3 +319,7 @@ document.querySelectorAll(".nav a").forEach(link => {
     document.getElementById("mobileMenu").classList.remove("active");
   });
 });
+function toggleMenu() {
+  const menu = document.getElementById("mobileMenu");
+  menu.classList.toggle("active");
+}
