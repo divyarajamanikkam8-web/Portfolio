@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio! This is a clean, responsive, and modern website showcasing my skills, projects, education, and expertise.
 
-**[Live Demo](https://divyarajamanikkam8-web-web.github.io/portfolio/)** • **[GitHub](https://github.com/divyarajamanikkam8-web)** • **[LinkedIn](https://www.linkedin.com/in/divya2607/)**
+**[Live Demo](https://divyarajamanikkam8-web.github.io/Portfolio/)** • **[GitHub](https://github.com/divyarajamanikkam8-web)** • **[LinkedIn](https://www.linkedin.com/in/divya2607/)**
 
 ---
 
