@@ -936,4 +936,7 @@ body.dark-mode .footer {
   .nav.active {
     left: 0;   /* show */
   }
+  .header {
+  position: relative;
+}
 }
