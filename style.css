@@ -1,100 +1,4 @@
-/* ============================================
-   PERFECT MOBILE FIX 🔥
-   ============================================ */
 
-@media (max-width: 768px) {
-
-  /* Header layout */
-  .header-content {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
-  }
-
-  .nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  /* Section spacing reduce */
-  .section {
-    padding: 50px 15px;
-  }
-
-  /* Title size */
-  .section-title h2 {
-    font-size: 1.8rem;
-  }
-
-  /* Cards full width */
-  .skills-grid,
-  .projects-grid,
-  .education-grid,
-  .cert-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  /* Card padding reduce */
-  .skill-card,
-  .project-card,
-  .education-card,
-  .cert-card {
-    padding: 15px;
-  }
-
-  /* Text size adjust */
-  p {
-    font-size: 0.95rem;
-  }
-
-  /* Contact layout */
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* Extra small devices */
-@media (max-width: 480px) {
-
-  .logo h1 {
-    font-size: 1.2rem;
-  }
-
-  .section-title h2 {
-    font-size: 1.5rem;
-  }
-
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .theme-toggle {
-    font-size: 1.2rem;
-    padding: 5px 10px;
-  }
-}
-/* Fix emoji color issue */
-.section-title h2 {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* Gradient only for text */
-.section-title h2 .text {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Emoji normal color */
-.section-title h2 .emoji {
-  -webkit-text-fill-color: initial;
-  background: none;
-}
 :root {
   /* Light Mode Colors */
   --primary: #5b21b6;
@@ -952,5 +856,42 @@ body.dark-mode .footer {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+/* ============================================
+   FINAL MOBILE FIX 🔥 (ADD THIS ONLY)
+   ============================================ */
+
+@media (max-width: 768px) {
+
+  /* Full width fix (MAIN PROBLEM) */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Header alignment fix */
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+
+  /* Nav fix */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* Toggle button spacing */
+  .theme-toggle {
+    margin-top: 15px;
+  }
+
+  /* Section spacing */
+  .section {
+    padding: 50px 15px;
   }
 }
