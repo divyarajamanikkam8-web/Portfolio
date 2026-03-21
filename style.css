@@ -1,31 +1,11 @@
 .section-title h2 {
-   font-size: 2.5rem;
-   margin-bottom: var(--spacing-md);
-   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;  /* ❌ This hides emojis */
-   background-clip: text;
-}
-.section-title h2 {
-  background: linear-gradient(to right, #ff6a00, #ee0979);
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-md);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
+  background-clip: text;
   display: inline-block;
-  z-index: 1;
-}
-
-.section-title h2::before {
-  content: ' '; /* Optional content to preserve space for emoji */
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-.section-title h2::after {
-  content: '🌙'; /* Ensure the emoji is added correctly */
-  position: absolute;
-  z-index: 2;
 }
 
 :root {
@@ -213,15 +193,6 @@ body.dark-mode .section {
 .section-title {
   text-align: center;
   margin-bottom: var(--spacing-xl);
-}
-
-.section-title h2 {
-  font-size: 2.5rem;
-  margin-bottom: var(--spacing-md);
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .section-title p {
