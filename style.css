@@ -1,3 +1,15 @@
+
+/* Emoji styling */
+.emoji {
+  filter: grayscale(1) brightness(0.8);
+  transition: filter 0.3s ease;
+  cursor: pointer;
+}
+
+.emoji.active,
+.emoji:active {
+  filter: grayscale(0) brightness(1);
+}
 .section-title h2 {
   font-size: 2.5rem;
   margin-bottom: var(--spacing-md);
