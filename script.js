@@ -314,3 +314,8 @@ if (document.readyState === 'loading') {
 
 console.log('✨ Portfolio loaded successfully!');
 console.log('🌙 Theme:', localStorage.getItem('theme') || 'light');
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", () => {
+    document.getElementById("mobileMenu").classList.remove("active");
+  });
+});
