@@ -1,190 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <title>Divya - Web Developer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header>
-    <h1>Welcome to My Portfolio</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-     <!-- Dark Mode Button -->
-  <button class="toggle-btn" onclick="toggleDarkMode()">🌙</button>
-
+  <!-- Smooth Scroll -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>Divya</h1>
+          <span class="tagline">Web Developer & Designer</span>
+        </div>
+        <nav class="nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>👋 About Me</h2>
-    <p style="font-size: 1.15em; color: #444; line-height: 1.7;">
-      Hi! I'm <span style="font-weight: bold; color: #5b21b6;">Divya</span>, a web developer passionate about building
-      <span style="color: #2563eb;">clean</span>, <span style="color: #059669;">functional</span>, and <span
-        style="color: #f59e42;">interactive</span> websites using <strong>HTML</strong>, <strong>CSS</strong>, and
-      <strong>JavaScript</strong>. I love solving problems, exploring new technologies, and crafting engaging user
-      experiences.
-    </p>
+  <!-- About Section -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>👋 About Me</h2>
+      </div>
+      
+      <div class="about-content">
+        <p class="intro-text">
+          Hi! I'm <span class="highlight">Divya</span>, a passionate web developer who loves creating 
+          <span class="color-clean">clean</span>, <span class="color-functional">functional</span>, and 
+          <span class="color-interactive">interactive</span> digital experiences using <strong>HTML</strong>, 
+          <strong>CSS</strong>, and <strong>JavaScript</strong>. 
+        </p>
+        <p class="intro-text">
+          I'm driven by solving problems, exploring emerging technologies, and building engaging user experiences that make a difference.
+        </p>
+      </div>
 
-    <h2>🎓 Education</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      <li
-        style="background: #ede9fe; border-radius: 0.7em; padding: 1em; margin-bottom: 1em; box-shadow: 0 1px 8px rgba(91,33,182,0.07);">
-        <strong style="font-size: 1.1em;">Adhiparasakthi Engineering College, Melmaruvathur</strong><br>
-        <span style="color: #6366f1;">Bachelor of Technology in Information Technology</span><br>
-        <span style="color: #888;">2023–2027</span>
-      </li>
-      <li style="background: #f1f5f9; border-radius: 0.7em; padding: 1em; box-shadow: 0 1px 8px rgba(59,59,109,0.05);">
-        <strong style="font-size: 1.1em;">Government Higher Secondary School, Acharapakkam</strong><br>
-        <span style="color: #0ea5e9;">Higher Secondary Certificate</span><br>
-        <span style="color: #888;">2010–2022</span>
-      </li>
-    </ul>
-
-   <h2>Skills</h2>
-
-<div class="skills-container">
-
-  <div class="skill-box">
-    <h3>Frontend</h3>
-    <p>HTML, CSS, JavaScript, Responsive Web Design</p>
-  </div>
-
-  <div class="skill-box">
-    <h3>Backend (Basics)</h3>
-    <p>Python, Java</p>
-  </div>
-
-  <div class="skill-box">
-    <h3>Tools</h3>
-    <p>Git, Figma, VS Code</p>
-  </div>
-
-  <div class="skill-box">
-    <h3>Other Skills</h3>
-    <p>Debugging, Testing, Documentation, Collaboration</p>
-  </div>
-
-</div>
-
-    <h2>🏅 Certifications & Achievements</h2>
-    <ul style="list-style: none; padding-left: 0;">
-      <li
-        style="background: #fef9c3; border-radius: 0.7em; padding: 1em; margin-bottom: 1em; box-shadow: 0 1px 8px rgba(245,158,66,0.07); display: flex; align-items: center;">
-        <span style="font-size: 1.5em; margin-right: 0.7em;">🎓</span>
-        <div>
-          <strong style="font-size: 1.1em;">HP LITE Data Science & Analytics</strong>
-          <br>
-          <span style="color: #888;">Apr 2025</span>
+      <!-- Education Section -->
+      <div class="education-section">
+        <h3>🎓 Education</h3>
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-content">
+              <h4>Adhiparasakthi Engineering College</h4>
+              <p class="degree">Bachelor of Technology in Information Technology</p>
+              <p class="year">2023–2027</p>
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="edu-icon">📚</div>
+            <div class="edu-content">
+              <h4>Government Higher Secondary School</h4>
+              <p class="degree">Higher Secondary Certificate</p>
+              <p class="year">2010–2022</p>
+            </div>
+          </div>
         </div>
-      </li>
-      <li
-        style="background: #e0f2fe; border-radius: 0.7em; padding: 1em; margin-bottom: 1em; box-shadow: 0 1px 8px rgba(14,165,233,0.07); display: flex; align-items: center;">
-        <span style="font-size: 1.5em; margin-right: 0.7em;">🐍</span>
-        <div>
-          <strong>Python for Data Science</strong> – NPTEL
+      </div>
+
+      <!-- Certifications Section -->
+      <div class="certifications-section">
+        <h3>🏅 Certifications & Achievements</h3>
+        <div class="cert-grid">
+          <div class="cert-card cert-1">
+            <span class="cert-icon">🎓</span>
+            <div>
+              <h4>HP LITE Data Science & Analytics</h4>
+              <p>Apr 2025</p>
+            </div>
+          </div>
+          <div class="cert-card cert-2">
+            <span class="cert-icon">🐍</span>
+            <div>
+              <h4>Python for Data Science</h4>
+              <p>NPTEL</p>
+            </div>
+          </div>
+          <div class="cert-card cert-3">
+            <span class="cert-icon">🤖</span>
+            <div>
+              <h4>Generative AI Workshop</h4>
+              <p>Chennai</p>
+            </div>
+          </div>
+          <div class="cert-card cert-4">
+            <span class="cert-icon">🛠️</span>
+            <div>
+              <h4>AI Tools Workshop</h4>
+              <p>BE10X</p>
+            </div>
+          </div>
+          <div class="cert-card cert-5">
+            <span class="cert-icon">🧠</span>
+            <div>
+              <h4>AI Awareness Program</h4>
+              <p>AI Fundamentals & Application</p>
+            </div>
+          </div>
         </div>
-      </li>
-      <li
-        style="background: #f3e8ff; border-radius: 0.7em; padding: 1em; margin-bottom: 1em; box-shadow: 0 1px 8px rgba(139,92,246,0.07); display: flex; align-items: center;">
-        <span style="font-size: 1.5em; margin-right: 0.7em;">🤖</span>
-        <div>
-          One-day workshop on <strong>Generative AI</strong> – Chennai
-        </div>
-      </li>
-      <li
-        style="background: #dcfce7; border-radius: 0.7em; padding: 1em; margin-bottom: 1em; box-shadow: 0 1px 8px rgba(34,197,94,0.07); display: flex; align-items: center;">
-        <span style="font-size: 1.5em; margin-right: 0.7em;">🛠️</span>
-        <div>
-          <strong>AI Tools Workshop</strong> – BE10X
-        </div>
-      </li>
-      <li
-        style="background: #fee2e2; border-radius: 0.7em; padding: 1em; box-shadow: 0 1px 8px rgba(239,68,68,0.07); display: flex; align-items: center;">
-        <span style="font-size: 1.5em; margin-right: 0.7em;">🧠</span>
-        <div>
-          One-week <strong>AI Awareness Program</strong> – AI Fundamentals & Application
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <h3><strong>Portfolio Website:</strong></h3>
-    <h4>🚀 Features  & 🧰 Technologies </h4>
-    <ul>
-      <li>🌐 This website itself! Designed and developed from scratch using HTML, CSS, and JavaScript</li>
-      <li>🎨 Custom responsive layout for desktop and mobile devices</li>
-      <li>🧑‍💻 Showcases my skills, education, certifications, and projects</li>
-      <li>⚡ Fast loading and optimized for performance</li>
-      <li>📬 Integrated contact form for easy communication</li>
-      <li>🔒 Privacy-focused, no tracking or ads</li>
-    </ul>
-    <a href="https://divyarajamanikkam8-web.github.io/Portfolio/" target="_blank">
-  🔗 View Project
-</a>
-    <br>
-    <h3><strong>Weather Detection App:</strong></h3>
-    <h4>🚀 Features  & 🧰 Technologies </h4>
-    <ul>
-      <li>📱 Developed a fully responsive web application with HTML5, CSS3 (Flexbox/Grid), and ES6+ JavaScript</li>
-      <li>🌦️ Integrated OpenWeatherMap API for live weather data, including temperature, humidity, wind speed, and
-        forecast</li>
-      <li>⚡ Implemented advanced asynchronous data fetching with error handling and loading states</li>
-      <li>📍 Added geolocation support to auto-detect user location and display local weather</li>
-      <li>🎨 Designed a modern, accessible UI with theme switching (dark/light mode)</li>
-      <li>🚀 Optimized for performance and mobile devices using best practices</li>
-      <li>🌐 Deployed the app online for public access</li>
-    </ul>
-    <a href="https://divyaharina.github.io/weather-project/" target="_blank">
-  🔗 View Project
-</a><br>
-    <h3><strong> 3D Solar System Project</strong></h3>
-    <h4>🚀 Features  & 🧰 Technologies </h4>
-    <ul>
-      <li>☀️ Sun at the center with glow effect , 8 planets orbiting with rotation</li>
-      <li>🌙 Moon orbiting Earth , Speed control sliders for each planet</li>
-      <li>🌓 Dark/Light mode toggle , Background stars and orbit rings</li>
-      <li>⏯️ Pause/Resume animation buttons</li>
-      <li>🎥 Click-to-zoom with info popup</li>
-      <li>📱 Responsive & mobile-friendly layout</li>
-    </ul>
-    <ul>
-      <li>🌐 HTML & CSS (UI, layout, styles)</li>
-      <li>💡 JavaScript (interactivity, control panel)</li>
-      <li>🎮 Three.js (3D scene, camera, lighting)</li>
-    </ul>
-    <a href="https://divyaharina.github.io/3D-solar-project/" target="_blank">
-  🔗 View Project
-</a>
+  <!-- Skills Section -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>💻 Technical Skills</h2>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript ES6+, Responsive Design, Flexbox, Grid</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Backend (Basics)</h3>
+          <p>Python, Java, API Integration, Data Processing</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <h3>Tools & Platforms</h3>
+          <p>Git, GitHub, VS Code, Figma, Chrome DevTools</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎯</div>
+          <h3>Other Skills</h3>
+          <p>Debugging, Testing, Documentation, Problem Solving, Collaboration</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p id="formMessage"></p>
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>🚀 Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Portfolio Website</h3>
+            <span class="project-tag">Personal</span>
+          </div>
+          <p class="project-desc">A fully responsive portfolio website showcasing my work, skills, and achievements with modern design.</p>
+          <div class="tech-stack">
+            <span class="tech">HTML5</span>
+            <span class="tech">CSS3</span>
+            <span class="tech">JavaScript</span>
+          </div>
+          <ul class="features-list">
+            <li>🌐 Responsive design for all devices</li>
+            <li>🎨 Custom UI/UX with animations</li>
+            <li>⚡ Optimized performance</li>
+            <li>📬 Contact form integration</li>
+            <li>🔒 Privacy-focused</li>
+          </ul>
+          <a href="https://divyarajamanikkam8-web.github.io/Portfolio/" target="_blank" class="project-link">View Project →</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Weather Detection App</h3>
+            <span class="project-tag">App</span>
+          </div>
+          <p class="project-desc">A real-time weather application with geolocation support and live weather data integration.</p>
+          <div class="tech-stack">
+            <span class="tech">HTML5</span>
+            <span class="tech">CSS3</span>
+            <span class="tech">JavaScript</span>
+            <span class="tech">API</span>
+          </div>
+          <ul class="features-list">
+            <li>🌦️ Real-time weather data (OpenWeatherMap API)</li>
+            <li>📍 Geolocation support</li>
+            <li>🌙 Dark/Light mode</li>
+            <li>⚡ Fast API calls with error handling</li>
+            <li>📱 Fully responsive</li>
+          </ul>
+          <a href="https://divyaharina.github.io/weather-project/" target="_blank" class="project-link">View Project →</a>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3>3D Solar System</h3>
+            <span class="project-tag">3D Graphics</span>
+          </div>
+          <p class="project-desc">An interactive 3D visualization of the solar system with realistic planetary orbits and animations.</p>
+          <div class="tech-stack">
+            <span class="tech">HTML5</span>
+            <span class="tech">CSS3</span>
+            <span class="tech">Three.js</span>
+            <span class="tech">JavaScript</span>
+          </div>
+          <ul class="features-list">
+            <li>☀️ Sun with glow effects</li>
+            <li>🌙 Accurate planetary orbits</li>
+            <li>⏯️ Play/Pause controls</li>
+            <li>🎥 Click-to-zoom with info</li>
+            <li>🌓 Dark/Light mode</li>
+          </ul>
+          <a href="https://divyaharina.github.io/3D-solar-project/" target="_blank" class="project-link">View Project →</a>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <a href="https://github.com/DIVYAHARINA" target="_blank"> Github</a> |
-    <a href="https://www.linkedin.com/in/divya2607/" target="_blank"> LinkedIn</a>
-    <br>
-    <p>&copy; 2025 Divya. All rights reserved.</p>
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>📬 Get In Touch</h2>
+        <p>I'd love to hear from you! Send me a message and I'll respond as soon as possible.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input 
+              type="text" 
+              id="name" 
+              placeholder="Your Full Name" 
+              required 
+              class="form-input"
+            />
+            <span class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <input 
+              type="email" 
+              id="email" 
+              placeholder="Your Email Address" 
+              required 
+              class="form-input"
+            />
+            <span class="error-message"></span>
+          </div>
+
+          <div class="form-group">
+            <textarea 
+              id="message" 
+              placeholder="Your Message (min 10 characters)" 
+              required 
+              rows="6"
+              class="form-input"
+            ></textarea>
+            <span class="error-message"></span>
+          </div>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div id="formMessage" class="form-message"></div>
+
+        <div class="contact-info">
+          <h3>Connect With Me</h3>
+          <div class="social-links">
+            <a href="https://github.com/DIVYAHARINA" target="_blank" class="social-link">
+              <span>🔗</span> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/divya2607/" target="_blank" class="social-link">
+              <span>💼</span> LinkedIn
+            </a>
+            <a href="mailto:your-email@example.com" class="social-link">
+              <span>✉️</span> Email
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Divya. All rights reserved.</p>
+        <p>Designed & Developed with ❤️ by Divya</p>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
