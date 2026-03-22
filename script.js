@@ -330,14 +330,4 @@ document.querySelectorAll(".nav a").forEach(link => {
   });
 });
 
-const skillCards = document.querySelectorAll('.skill-card');
 
-window.addEventListener('scroll', () => {
-  skillCards.forEach(card => {
-    const top = card.getBoundingClientRect().top;
-
-    if (top < window.innerHeight - 50) {
-      card.classList.add('show');
-    }
-  });
-});
