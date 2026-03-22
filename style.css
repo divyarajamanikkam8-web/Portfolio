@@ -644,7 +644,7 @@ body.dark-mode .form-input:focus {
 
 .submit-btn:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
 .submit-btn:active {
@@ -725,11 +725,14 @@ body.dark-mode .contact-info h3 {
   transition: var(--transition-fast);
   border: none;
   cursor: pointer;
+  margin: 8px 0;
 }
 
 .social-link:hover {
   transform: translateX(5px);
   box-shadow: var(--shadow-lg);
+   background: #4f46e5;
+  color: white;
 }
 
 /* ============================================
