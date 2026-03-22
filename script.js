@@ -169,7 +169,7 @@ contactForm.addEventListener('submit', async (e) => {
     // Simulate form submission (replace with actual backend endpoint)
     await simulateFormSubmission(formData);
     
-    showFormMessage('✅ Message sent successfully! Thank you for reaching out.', 'success');
+    showFormMessage('🚀 Message sent successfully! I will get back to you soon.', 'success');
     contactForm.reset();
     
     // Clear error states
