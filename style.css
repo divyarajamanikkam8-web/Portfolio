@@ -10,6 +10,13 @@
 .project-card:hover .project-img {
   transform: scale(1.05);
 }
+.project-card {
+  overflow: hidden;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.1);
+}
 :root {
   /* Light Mode Colors */
   --primary: #5b21b6;
