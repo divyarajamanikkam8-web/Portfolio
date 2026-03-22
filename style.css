@@ -433,22 +433,19 @@ body.dark-mode .skill-card p {
   background: #ddd;
   border-radius: 5px;
   margin-top: 10px;
-  overflow: hidden;
 }
 
 .skill-bar {
   height: 100%;
   background: #4f46e5;
   border-radius: 5px;
-  transition: width 1s ease;
-  width:0;
 }
 
 /* Levels */
-.skill-card.show.html { width: 90%; background: #4f46e5; }
-.skill-card.show.css { width: 85%; background: #4f46e5; }
-.skill-card.show.js { width: 75%; background: #4f46e5; }
-.skill-card.show.git { width: 70%; }
+.skill-bar.html { width: 90%; background: #4f46e5; }
+.skill-bar.css { width: 85%; background: #4f46e5; }
+.skill-bar.js { width: 75%; background: #4f46e5; }
+.skill-bar.git { width: 70%; background: #4f46e5;  }
 
 /* ============================================
    PROJECTS SECTION
